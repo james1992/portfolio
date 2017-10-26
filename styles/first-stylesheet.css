@@ -8,11 +8,9 @@
 body {
   min-width: 1500px;
 }
-
 /*
    Set the relative positions of the three main content sections.
 */
-
 header {
   margin: auto;
   width: 50%;
@@ -28,6 +26,7 @@ footer {
   margin: auto;
   width: 50%;
   text-align: center;
+  color: grey;
 }
 /*
    Format the text to remove unnecessary white space, format on the
@@ -52,6 +51,10 @@ p {
 }
 ul {
   margin-top: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  font-family: 'Open Sans', sans-serif;
 }
 /* 
    Format the table elements.  Set the font and align text, add a perimeter
@@ -66,7 +69,10 @@ table {
 td, th {
   padding: 10px 0;
   max-width: 350px;
-} 
+}
+td p {
+  text-align: left;
+}
 /*Center the tables inside each section tag */
 .table {
   margin-left:auto; 
@@ -83,14 +89,14 @@ td, th {
 */
 #html {
   width: 39%;
-  height: 1500px;
+  height: 1600px;
   float:left;
   margin-left: 10%;
   margin-right: 5px;
 }
 #gis {
   width: 39%;
-  height: 1500px;
+  height: 1600px;
   float:left;
   margin-right: 10%;
   margin-left: 5px;
