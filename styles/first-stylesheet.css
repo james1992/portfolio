@@ -6,25 +6,30 @@
    scroll bar will appear.
 */
 body {
-  min-width: 1500px;
+  min-width: 500px;
+  left: 1rem;
 }
 /*
    Set the relative positions of the three main content sections.
 */
-header {
-  margin: auto;
-  width: 50%;
+header{
+  position: fixed;
   text-align: center;
+  top: 0;
+  height: 150px;
+  width: 100%;
+  background:rgba(220,220,220,0.9);
 }
 article {
-  margin: auto;
-  width: 70%;
+  margin-left: 4rem;
+  margin-top: 150px;
   text-align: left;
   align-content: center;
 }
 footer {
   margin: auto;
-  width: 50%;
+  padding-top: 1rem;
+  width: 100%;
   text-align: center;
   color: grey;
 }
@@ -55,6 +60,18 @@ ul {
 }
 a {
   font-family: 'Open Sans', sans-serif;
+}
+.arrow {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+.top-nav a {
+  padding-right: 1rem;
+}
+span {
+  color: black;
+}
 }
 /* 
    Format the table elements.  Set the font and align text, add a perimeter
