@@ -1,37 +1,44 @@
 /* CSS for James Dahlstrom's Portfolio Site */
 
-/* 
-   The minimum size of the web page, if the visitor
-   minimizes the browser to less than 1500px a horizonal 
-   scroll bar will appear.
-*/
+/* leave white space on the left side of each page */
 body {
-  min-width: 500px;
   left: 1rem;
 }
 /*
    Set the relative positions of the three main content sections.
+   Applies to each page unless another class overrides the defaults
 */
 header{
   position: fixed;
   text-align: center;
   top: 0;
-  height: 150px;
+  height: 180px;
   width: 100%;
   background:rgba(220,220,220,0.9);
 }
 article {
-  margin-left: 4rem;
-  margin-top: 150px;
+  margin-top: 220px;
   text-align: left;
   align-content: center;
 }
+
 footer {
   margin: auto;
   padding-top: 1rem;
   width: 100%;
   text-align: center;
   color: grey;
+}
+
+/* 
+   Settings specific to the resume page.  Set a minimum width
+   for formating purposes and a margin to a bigger margin.
+*/
+.resume {
+  min-width: 500px;
+}
+.resume-info {
+  margin-left: 4rem;
 }
 /*
    Format the text to remove unnecessary white space, format on the
@@ -42,11 +49,7 @@ h1 {
   text-align: center;
   font-family: 'Encode Sans', sans-serif;
 }
-h2 {
-  margin-bottom: 5px;
-  font-family: 'Uni Sans', sans-serif;
-}
-h3 {
+h2, h3 {
   margin-bottom: 5px;
   font-family: 'Uni Sans', sans-serif;
 }
@@ -61,17 +64,41 @@ ul {
 a {
   font-family: 'Open Sans', sans-serif;
 }
+/* 
+   Format the back to top arrow, set the fixed position
+   and change the color.
+*/
 .arrow {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
 }
+/*
+   Format the navigation bar to set the color, location
+   and padding. 
+*/
 .top-nav a {
   padding-right: 1rem;
 }
 span {
   color: black;
 }
+/*
+   On the homepage format the dashboard buttons to display in line
+   and update positioning based on screen size.  Set a defined image 
+   size for all images to improve layout.
+*/
+.home-nav {
+  align-content: center;
+  text-align: center;
+}
+.home-nav figure {
+  display: inline-block;
+  align-content: center;
+}
+.nav-buttons img {
+  width: 14rem;
+  height: 14rem;
 }
 /* 
    Format the table elements.  Set the font and align text, add a perimeter
