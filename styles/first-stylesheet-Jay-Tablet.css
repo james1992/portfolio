@@ -1,19 +1,12 @@
 /* CSS for James Dahlstrom's Portfolio Site */
 
-/* 
-   The minimum size of the web page, on the resume page when
-   the browser minimizes to less than 500px a horizonal 
-   scroll bar will appear.
-*/
+/* leave white space on the left side of each page */
 body {
   left: 1rem;
 }
-.resume {
-  min-width: 500px;
-}
 /*
    Set the relative positions of the three main content sections.
-   The resume page is set to a different left margin than the others
+   Applies to each page unless another class overrides the defaults
 */
 header{
   position: fixed;
@@ -22,21 +15,30 @@ header{
   height: 180px;
   width: 100%;
   background:rgba(220,220,220,0.9);
-  z-index: 1;
 }
 article {
   margin-top: 220px;
   text-align: left;
   align-content: center;
 }
-.resume-info {
-  margin-left: 4rem;
-}
+
 footer {
   margin: auto;
-  width: 50%;
+  padding-top: 1rem;
+  width: 100%;
   text-align: center;
   color: grey;
+}
+
+/* 
+   Settings specific to the resume page.  Set a minimum width
+   for formating purposes and a margin to a bigger margin.
+*/
+.resume {
+  min-width: 500px;
+}
+.resume-info {
+  margin-left: 4rem;
 }
 /*
    Format the text to remove unnecessary white space, format on the
@@ -62,8 +64,9 @@ ul {
 a {
   font-family: 'Open Sans', sans-serif;
 }
-/*
-   Formatting for the return to the top arrow
+/* 
+   Format the back to top arrow, set the fixed position
+   and change the color.
 */
 .arrow {
   position: fixed;
@@ -71,7 +74,8 @@ a {
   right: 1rem;
 }
 /*
-   Formatting for the top nav on all pages and the homepage main nav
+   Format the navigation bar to set the color, location
+   and padding. 
 */
 .top-nav a {
   padding-right: 1rem;
@@ -79,6 +83,11 @@ a {
 span {
   color: black;
 }
+/*
+   On the homepage format the dashboard buttons to display in line
+   and update positioning based on screen size.  Set a defined image 
+   size for all images to improve layout.
+*/
 .home-nav {
   align-content: center;
   text-align: center;
@@ -91,64 +100,6 @@ span {
   width: 14rem;
   height: 14rem;
 }
-/*
-   Format for the competencies page, images, overlay and header
-*/
-.competencies {
-  margin: auto;
-  width: 40rem;
-}
-#competency-header {
-  padding-top: 12rem;
-}
-.competencies img, overlay, text, .container {
-  margin: auto;
-  width: 20rem;
-  height: 20rem;
-}
-.container {
-  position: relative;
-  align-content: center;
-  width: 50%;
-  padding-top: 2rem;
-}
-.image {
-  display: block;
-  width: 14rem;
-  height: 14rem;
-}
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(220,220,220,0.9);
-  overflow: hidden;
-  width: 20rem;
-  height: 0;
-  transition: .5s ease;
-}
-
-.container:hover .overlay {
-  height: 20rem;
-}
-.container-top:hover .overlay {
-  height: 20rem;
-}
-
-.text {
-  word-wrap: break-word;
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  overflow:hidden;
-  top: 50%;
-  left: 50%;
-  width: 20rem;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
 /* 
    Format the table elements.  Set the font and align text, add a perimeter
    border.
@@ -174,4 +125,23 @@ td p {
 /* Center the table headers over the tables */
 .title{
   text-align: center;
+}
+/* 
+   Set the position of the two tables on the page. 
+   Ensure that they align horizontally and do not overlap.
+   Keep the footer at the bottom of the page.
+*/
+#html {
+  width: 39%;
+  height: 1600px;
+  float:left;
+  margin-left: 10%;
+  margin-right: 5px;
+}
+#gis {
+  width: 39%;
+  height: 1600px;
+  float:left;
+  margin-right: 10%;
+  margin-left: 5px;
 }

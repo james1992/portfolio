@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Jay Dahlstrom's Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles/first-stylesheet.css">
 </head>
@@ -21,32 +23,100 @@
     </nav>
   </header>
   
-  <article class="home-nav">
-    <!-- -->
-    <figure class="nav-buttons">
-      <a href="resume.html"><img src="images/resume.jpg" alt="Link to Resume"></a>
-      <figcaption>Resume</figcaption>
-    </figure>
-    <figure class="nav-buttons">
-      <a href="competencies.html"><img src="images/competencies.jpg" alt="Link to Competencies"></a>
-      <figcaption>Competencies</figcaption>
-    </figure>
-    <figure class="nav-buttons">
-      <a href="projects-coding.html"><img src="images/coding.png" alt="Link to Coding Projects"></a>
-      <figcaption>Coding Projects</figcaption>
-    </figure>
-    <figure class="nav-buttons">
-      <a href="projects-gis.html"><img src="images/gis.png" alt="Link to GIS Projects"></a>
-      <figcaption>GIS Projects</figcaption>
-    </figure>
-    <section class="arrow">
-      <a href="#top"><span class="fa fa-arrow-circle-o-up fa-3x" aria-hidden="true" title="Return to Top"></span></a>
-    </section>
-  </article>
-
+  <section class="competencies">
+    <!-- Running list of competencies, displayed in one vertical column.  On hover text appears over each image -->
+    <h2 id="competency-header">Competencies</h2>
+    <article class="container">
+      <img src="images/arcgis.png" alt="ArcGIS Logo" class="image">
+      <section class="overlay">
+        <section class="text">
+          <p>I have worked extensively with ArcGIS Software to collect, manage and visualize a variety of spatial datasets.</p>
+        </section>
+        </section>
+    </article>
+    
+    <article class="container">
+      <img src="images/arcgis-server.jpg" alt="ArcGIS Server Diagram" class="image">
+      <section class="overlay">
+        <section class="text">
+          <p>I have managed ArcGIS Online accounts as well as instances of ArcGIS Server and Portal for ArcGIS to create web applications supporting the maintenance of University facilities.</p>
+        </section>
+        </section>
+    </article>
+    
+    <article class="container">
+      <img src="images/python.png" alt="Python Logo" class="image">
+      <section class="overlay">
+        <section class="text">
+          <p>My knowledge of Python has allowed me to automated several workflows through the use of the ArcPy library.  Such as routine database maintenance (index updates) and ETL processes.</p>
+        </section>
+        </section>
+    </article>
+    
+    <article class="container">
+      <img src="images/sql.png" alt="SQL" class="image">
+      <section class="overlay">
+        <section class="text">
+          <p>I previously completed a certificate course in database management with SQL through the University of Washington.  Since then I have used SQL to manage spatial and non-spatial data in an enterprise environment.</p>
+        </section>
+        </section>
+    </article>
+    
+    <article class="container">
+      <img src="images/trimble.png" alt="Trimble Logo" class="image">
+      <section class="overlay">
+        <section class="text">
+          <p>Through my work in Facilities Services at the University of Washington I frequently use trmible GPS equipment, including but not limitted to handheld devices and a robotic total station.</p>
+        </section>
+        </section>
+    </article>
+    
+    <article class="container">
+      <img src="images/faro.jpg" alt="FARO Laser Scanner" class="image">
+      <section class="overlay">
+        <section class="text">
+          <p>Light Detection and Ranging (LiDAR) allows organizations to create three dimensional models of built environments.  I have used equipment and software developed by FARO to scan eight miles of tunnels and two power plants.  The data is published to a WebShare for remote access to these scans.</p>
+        </section>
+        </section>
+    </article>
+    
+    <article class="container">
+      <img src="images/sql%20server.png" alt="SQL Server Logo" class="image">
+      <section class="overlay">
+        <section class="text">
+          <p>I have used SQL Server 2012 and 2014 extensively to manage all of the GIS data for UW Facilities Services.  This includes not only creating tables and views but also stored procedures to calculate complex values and track changes.</p>
+        </section>
+        </section>
+    </article>
+    
+    <article class="container">
+      <img src="images/sharepoint.png" alt="SharePoint 2013 Logo" class="image">
+      <section class="overlay">
+        <section class="text">
+          <p>With SharePoint 2010 and 2013 as well as Office365 I have developed sites to collect and store project documents and real time test data.</p>
+        </section>
+        </section>
+    </article>
+    
+    <article class="container">
+      <img src="images/windows-2012.jpg" alt="Windows Server 2012 Logo" class="image">
+      <section class="overlay">
+        <section class="text">
+          <p>I have setup several rack servers from scratch and implemented virtualized environments using Windows Server 2012 and Hyper-V.</p>
+        </section>
+        </section>
+    </article>
+    
+  </section>
+  
+  <!-- An arrow in the lower right of the page that returns the user to the section with ID = top -->
+  <section class="arrow">
+    <a href="#top"><span class="fa fa-arrow-circle-o-up fa-3x" aria-hidden="true"></span></a>
+  </section>
+  
   <footer>
-    <!--Date Modified and Author -->
-    <p><i>Last updated on Nov. 11, 2017 by Jay Dahlstrom</i></p>
+    <!--Date Modified, Author and secondary navigation -->
+    <p><i>Last updated on Nov. 15, 2017 by Jay Dahlstrom</i></p>
   </footer>
 </body>
 </html>
